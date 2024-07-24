@@ -16,5 +16,7 @@ ALL status active check: systemctl list-units --type=service --state=running
 ALL status not active check: systemctl list-units --type=service
 ALL status check: systemctl --type=service --all
 check all port active: sudo ss -tulnp
+view port active with cmd windows: nmap 192.168.1.11
+
 
 
