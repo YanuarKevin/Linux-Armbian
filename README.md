@@ -15,3 +15,6 @@ status chech zerotier: sudo systemctl status zerotier-one
 ALL status active check: systemctl list-units --type=service --state=running
 ALL status not active check: systemctl list-units --type=service
 ALL status check: systemctl --type=service --all
+check all port active: sudo ss -tulnp
+
+
